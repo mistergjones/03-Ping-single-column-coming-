@@ -15,4 +15,4 @@ The challenge was to replicate as close as possible to the above design encapsul
 1. desktop version
 2. mobile version (via media queries. Set at 375px)
 3. ensure an appropriate "error" message appeared if an invalid email address was entered. This was achieved via a REGEXP.
-4. Social media icons. Achieved from IonIcons using their <script></script> tag to their CDN.
+4. Social media icons. Achieved from IonIcons using their <script></script> tag to their icon endpoint.

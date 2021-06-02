@@ -1,0 +1,214 @@
+:root {
+    --primary-blue: hsl(223, 87%, 63%);
+    --secondary-pale-blue: hsl(223, 100%, 88%);
+    --secondary-light-red: hsl(354, 100%, 66%);
+
+    --neutral-gray: hsl(0, 0%, 59%);
+    --neutral-very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 0;
+    width: 100%;
+    font-size: 20px;
+    font-family: "Libre Franklin", sans-serif;
+    text-align: center;
+}
+
+.flexbox-container {
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flexbox-item {
+    width: auto;
+    margin: 10px;
+    /* border: 3px solid gray; */
+    background-color: white;
+}
+
+.flexbox-item-1 {
+    color: var(--neutral-very-dark-blue);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.flexbox-item-2 {
+    color: var(--neutral-gray);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+mark {
+    color: var(--neutral-very-dark-blue);
+    font-weight: bold;
+    background-color: white;
+}
+
+.flexbox-item-3 {
+    color: var(--neutral-gray);
+    margin-bottom: 1rem;
+    color: var(--neutral-very-dark-blue);
+}
+
+.flexbox-item-4 {
+    display: flex;
+    justify-content: center;
+    outline: 0;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+.emailInput {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 20rem;
+    border-radius: 2rem;
+    outline: 0;
+    border-color: var(--neutral-gray);
+    opacity: 0.5;
+    text-align: left;
+}
+
+.notifyAnchor {
+    border: 0px;
+    text-decoration: none;
+    color: white;
+    background-color: #4d7bf3;
+    border-radius: 2rem;
+    margin-left: 1rem;
+    padding: 1rem 4rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    box-shadow: 0px 10px 18px hsl(223, 87%, 63%);
+}
+
+.flexbox-item-5 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+img {
+    height: 70%;
+    width: 70%;
+}
+
+.flexbox-item-6 {
+    display: flex;
+    justify-content: center;
+}
+
+.flexbox-item-7 {
+    color: var(--neutral-very-dark-blue);
+    font-size: 8px;
+}
+
+.socialPadding {
+    /* padding: 0 3.5rem; */
+}
+
+.niceBox {
+    border: 1px solid gray;
+    padding: 0.5rem;
+    border-radius: 100%;
+    opacity: 0.5;
+    margin: 1rem;
+}
+
+ion-icon {
+    align-items: center;
+    font-size: 1rem;
+    color: blue;
+}
+
+@media screen and (max-width: 375px) {
+    .flexbox-item-1 {
+        font-size: 2rem;
+    }
+
+    .flexbox-item-2 {
+        font-size: 2rem;
+    }
+
+    .flexbox-item-3 {
+        font-size: 1rem;
+    }
+    .flexbox-item-4 {
+        display: inlineflex;
+        flex-direction: column;
+    }
+
+    .flexbox-item-4 .emailInput {
+        width: 100%;
+        border-color: var(--neutral-gray);
+        opacity: 0.5;
+        outline: 0;
+        padding-left: 40px;
+        margin-bottom: 2rem;
+        padding-right: 0;
+    }
+
+    .flexbox-item-4 .notifyAnchor {
+        border: 0px;
+        width: 100%;
+        background-color: 4c7bf1;
+        box-shadow: 0 10 18px hsla(223, 87%, 63%, 0.1);
+        overflow: hidden;
+        color: white;
+        font-size: 1rem;
+        font-weight: 400;
+        text-decoration: none;
+        margin-left: 0;
+    }
+
+    .flexbox-item-5 {
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+
+    .flexbox-item-5 > img {
+        width: 550px;
+        height: 250px;
+        background-size: stretch;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .flexbox-item-4 {
+        display: inlineflex;
+        flex-direction: column;
+    }
+
+    .flexbox-item-4 .emailInput {
+        width: 100%;
+        border-color: var(--neutral-gray);
+        opacity: 0.5;
+        outline: 0;
+        padding-left: 40px;
+        margin-bottom: 2rem;
+        padding-right: 0;
+    }
+
+    .flexbox-item-4 .notifyAnchor {
+        width: 100%;
+        background-color: 4c7bf1;
+        box-shadow: 0 10 18px hsla(223, 87%, 63%, 0.1);
+        overflow: hidden;
+        color: white;
+        font-size: 1rem;
+        font-weight: 400;
+        text-decoration: none;
+        margin-left: 0;
+    }
+}

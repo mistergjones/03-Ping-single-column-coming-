@@ -46,8 +46,10 @@
             </div>
 
             <div class="flexbox-item flexbox-item-4">
-              <form action="" method="POST">
+              <form action="">
                 <input
+                id="myInput"
+              
                 class="emailInput"
                 type="email"
                 minlength="5"
@@ -57,7 +59,8 @@
                 placeholder="Your email address"
             />
            
-            <button class="notifyAnchor">Notify Me</button>
+            <button onclick="getInputValue()" class="notifyAnchor">Notify Me</button>
+          </form>
         </div>
         <div class="flexbox-item flexbox-item-5">
             <img src="images/illustration-dashboard.png" alt="" />
@@ -93,5 +96,6 @@
                 <a href="https://www.glenjones.com.au">Glen Jones</a>.
             </p>
         </footer>
+        <script src="js/main.js"></script>
     </body>
 </html>
